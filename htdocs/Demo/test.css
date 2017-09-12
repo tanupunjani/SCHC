@@ -1,0 +1,14 @@
+#draggable {
+  width: 400px;
+  padding-right: 5%;
+  height: 50px;
+  cursor: move;
+  position: auto;
+}
+
+#second-wrapper {
+  cursor: move;
+  height: 500px;
+  width: 500px;
+  position: auto;
+}

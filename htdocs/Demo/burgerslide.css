@@ -1,0 +1,206 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: scroll;
+	background-color: #f5f5f5;
+}
+
+.slideout {
+	text-align: left;
+	position: fixed;
+	width: 100%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #931f1f;
+	box-shadow: 0px 0px 5px black
+}
+
+li {
+	float: left;
+}
+
+ul li {
+	list-style: none;
+	margin: 0 30px 0 0;	
+}
+
+ul li a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+
+.slideoutbtn {
+	display: none;
+}
+
+/*
+
+This CSS breaks the menu slide feature!
+
+.content1 {
+	text-align: center;
+	border: 2pt solid black;
+	padding-top: 70px;
+	background-color: black;
+}
+
+*/
+
+p {
+	text-align: center;
+	margin: 10px 0 0px 0;
+	padding: 40px 0 40px 0;
+	background-color: #212112;
+	color: white;
+}
+
+.banner {
+	text-decoration: bold;
+	text-align: center;
+	margin: 60px 0 0px 0;
+	padding: 60px 0 60px 0;
+	background-color: #212112;
+	color: white;
+
+}
+
+footer {
+	margin: 10px 0 0 0;
+	padding: 10px 15px 10px 15px;
+	background-color: #931f1f;
+}
+
+.news {
+	text-align: left;
+	color: white;
+}
+
+.socialmedia {
+	text-align: right;
+	color: white;
+}
+
+ul li a:hover {
+	background-color: #d9d9d9;
+}
+
+@media only screen and (max-width: 500px) {
+
+	.slideout {
+	position: fixed;
+	background-color: #931f1f;
+	top: 0;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	transition: .7s;	
+	
+}
+
+.active {
+	left: 0px;
+	
+}
+
+ul {
+	margin: 0;
+	padding: 20px 0;
+	box-shadow: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+ul li a {
+	padding: 10px 20px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+ul li a:hover {
+	background-color: #d9d9d9;
+}
+
+li {
+	float: none;
+}
+
+.slideoutbtn {
+	display: block;
+}
+
+.slideoutbtn {
+	position: absolute;
+	top: 0px;
+	right: -50px;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	border: none;
+	outline: none;
+}
+
+.slideoutbtn span {
+	display: block;
+	width: 35px;
+	height: 3px;
+	background-color: #262626;
+	position: absolute;
+	top: 24px;
+	transition: .3s;
+}
+
+.slideoutbtn span:before {
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #262626;
+	transition: .3s;
+}
+
+.slideoutbtn span:after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #262626;
+	transition: .3s;
+}
+
+.slideoutbtn.toggle span {
+	background-color: transparent;
+}
+
+.slideoutbtn.toggle span:before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.slideoutbtn.toggle span:after {
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+}
+
+/*SLIDEOUT HAMBURGER MENU*/ 
+

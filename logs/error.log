@@ -1,0 +1,40 @@
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - The specified module could not be found.\r\n in Unknown on line 0
+[Tue Aug 29 11:25:55.961037 2017] [mpm_winnt:notice] [pid 5784:tid 356] AH00455: Apache/2.4.27 (Win64) PHP/7.1.7 configured -- resuming normal operations
+[Tue Aug 29 11:25:55.961037 2017] [mpm_winnt:notice] [pid 5784:tid 356] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Tue Aug 29 11:25:55.961037 2017] [core:notice] [pid 5784:tid 356] AH00094: Command line: 'C:\\apache24\\bin\\httpd.exe -d C:/Apache24'
+[Tue Aug 29 11:25:55.961037 2017] [mpm_winnt:notice] [pid 5784:tid 356] AH00418: Parent: Created child process 5892
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - The specified module could not be found.\r\n in Unknown on line 0
+[Tue Aug 29 11:25:56.288644 2017] [mpm_winnt:notice] [pid 5892:tid 276] AH00354: Child: Starting 64 worker threads.
+[Tue Aug 29 12:04:40.725998 2017] [mpm_winnt:notice] [pid 5784:tid 356] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Aug 29 12:04:42.727198 2017] [mpm_winnt:notice] [pid 5892:tid 276] AH00364: Child: All worker threads have exited.
+[Tue Aug 29 12:04:42.745200 2017] [mpm_winnt:notice] [pid 5784:tid 356] AH00430: Parent: Child process 5892 exited successfully.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - The specified module could not be found.\r\n in Unknown on line 0
+[Tue Aug 29 12:04:43.990324 2017] [mpm_winnt:notice] [pid 5880:tid 356] AH00455: Apache/2.4.27 (Win64) PHP/7.1.7 configured -- resuming normal operations
+[Tue Aug 29 12:04:43.991324 2017] [mpm_winnt:notice] [pid 5880:tid 356] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Tue Aug 29 12:04:43.991324 2017] [core:notice] [pid 5880:tid 356] AH00094: Command line: 'C:\\apache24\\bin\\httpd.exe -d C:/Apache24'
+[Tue Aug 29 12:04:43.992324 2017] [mpm_winnt:notice] [pid 5880:tid 356] AH00418: Parent: Created child process 2076
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - The specified module could not be found.\r\n in Unknown on line 0
+[Tue Aug 29 12:04:44.345360 2017] [mpm_winnt:notice] [pid 2076:tid 276] AH00354: Child: Starting 64 worker threads.
+[Thu Aug 31 09:54:41.001893 2017] [php7:warn] [pid 2076:tid 772] [client ::1:52191] PHP Warning:  POST Content-Length of 11603198 bytes exceeds the limit of 8388608 bytes in Unknown on line 0, referer: http://localhost/phpmyadmin/server_import.php?db=
+[Thu Aug 31 11:33:57.963642 2017] [php7:error] [pid 2076:tid 792] [client 192.168.51.99:50159] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\\Apache24\\htdocs\\phpMyAdmin\\libraries\\ErrorHandler.php on line 162
+[Thu Aug 31 11:33:58.220642 2017] [php7:error] [pid 2076:tid 780] [client 192.168.51.99:50160] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\\Apache24\\htdocs\\phpMyAdmin\\vendor\\composer\\ClassLoader.php on line 300
+[Mon Sep 11 12:03:40.241801 2017] [mpm_winnt:notice] [pid 5880:tid 356] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Sep 11 12:03:45.842211 2017] [mpm_winnt:notice] [pid 2076:tid 276] AH00364: Child: All worker threads have exited.
+[Mon Sep 11 12:04:31.799642 2017] [core:warn] [pid 1572:tid 264] AH00098: pid file C:/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - The specified module could not be found.\r\n in Unknown on line 0
+[Mon Sep 11 12:04:32.659643 2017] [mpm_winnt:notice] [pid 1572:tid 264] AH00455: Apache/2.4.27 (Win64) PHP/7.1.7 configured -- resuming normal operations
+[Mon Sep 11 12:04:32.659643 2017] [mpm_winnt:notice] [pid 1572:tid 264] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Mon Sep 11 12:04:32.659643 2017] [core:notice] [pid 1572:tid 264] AH00094: Command line: 'C:\\apache24\\bin\\httpd.exe -d C:/Apache24'
+[Mon Sep 11 12:04:32.669643 2017] [mpm_winnt:notice] [pid 1572:tid 264] AH00418: Parent: Created child process 2012
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - The specified module could not be found.\r\n in Unknown on line 0
+[Mon Sep 11 12:04:33.129644 2017] [mpm_winnt:notice] [pid 2012:tid 276] AH00354: Child: Starting 64 worker threads.
+[Mon Sep 11 16:53:59.384472 2017] [mpm_winnt:notice] [pid 1572:tid 264] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Sep 11 16:54:01.412202 2017] [mpm_winnt:notice] [pid 2012:tid 276] AH00364: Child: All worker threads have exited.
+[Mon Sep 11 16:54:01.505802 2017] [mpm_winnt:notice] [pid 1572:tid 264] AH00430: Parent: Child process 2012 exited successfully.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - The specified module could not be found.\r\n in Unknown on line 0
+[Tue Sep 12 09:09:06.026030 2017] [mpm_winnt:notice] [pid 1552:tid 356] AH00455: Apache/2.4.27 (Win64) PHP/7.1.7 configured -- resuming normal operations
+[Tue Sep 12 09:09:06.026030 2017] [mpm_winnt:notice] [pid 1552:tid 356] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Tue Sep 12 09:09:06.026030 2017] [core:notice] [pid 1552:tid 356] AH00094: Command line: 'C:\\apache24\\bin\\httpd.exe -d C:/Apache24'
+[Tue Sep 12 09:09:06.026030 2017] [mpm_winnt:notice] [pid 1552:tid 356] AH00418: Parent: Created child process 1720
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - The specified module could not be found.\r\n in Unknown on line 0
+[Tue Sep 12 09:09:06.386030 2017] [mpm_winnt:notice] [pid 1720:tid 276] AH00354: Child: Starting 64 worker threads.

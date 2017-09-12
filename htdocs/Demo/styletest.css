@@ -1,0 +1,693 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*----------CSS RESET CODE ABOVE-----------*/
+
+body {
+    height: auto;
+    background-color: #00a087;
+}
+
+.margin-wrapper {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 15px 0;
+    width: 7%;
+    height: 7%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.logotext {
+    float: left;
+    padding: 15px 0;
+    width: 12%;
+    height: 12%;
+    margin-top: 1.3%;
+    margin-bottom: -2%;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 3.3%;
+    
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Arial";
+    font-size: 14px;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #00a087;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.nav-login form button {
+    float: right;
+    width: 200px;
+    height: 20px;
+    border: none;
+    background-color: #f3f3f3;
+    font-family: arial;
+    float: left;
+    margin-top: 1%;
+    margin-left: 2%;
+    cursor: pointer;
+    font-size: 13px;
+    position: relative;
+}
+
+.nav-login form button:hover {
+    background-color: #ccc;
+}
+
+/*----------NAVIGATION CSS ABOVE----------*/
+
+.slideoutbtn {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .container {
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    transition: .7s;    
+    
+}
+
+.active {
+    left: 0px;
+    
+}
+
+ul {
+    margin: 0;
+    padding: 20px 0;
+    box-shadow: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    padding: 10px 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+li {
+    float: none;
+}
+
+.slideoutbtn {
+    display: block;
+}
+
+.slideoutbtn {
+    position: absolute;
+    top: 0px;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #00a087;
+    border: none;
+    outline: none;
+}
+
+.slideoutbtn span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #262626;
+    position: absolute;
+    top: 24px;
+    transition: .3s;
+}
+
+.slideoutbtn span:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #262626;
+    transition: .3s;
+}
+
+.slideoutbtn span:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #262626;
+    transition: .3s;
+}
+
+.slideoutbtn.toggle span {
+    background-color: transparent;
+}
+
+.slideoutbtn.toggle span:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.slideoutbtn.toggle span:after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.logo {
+    width: 40%;
+    height: auto;
+}
+
+.logotext {
+    margin-top: 8%;
+    width: 50%;
+    height: auto;
+}
+
+}
+
+/*----------SLIDE OUT HAMBURGER MENU ABOVE----------*/
+
+.banner-text {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    color: black;
+    position: relative;
+    text-align: center;
+    font-family: Arial;
+    font-size: 35pt;
+    text-decoration: none;
+}
+
+.banner-pic {
+    margin-top: 5%;
+    position: relative;
+    height: 5%;
+    width: 100%;
+    box-shadow: 0px 1px 7px black;
+}
+
+.top-line {
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+    border-color: black;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    font-size: 20pt;
+    font-family: Arial;
+    color: black;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+/*----------MAIN BANNER HERE ABOVE----------*/
+
+.main-wrapper-text1 {
+    position: relative;
+    height: auto;
+    align: top;
+}
+
+.img-container {
+    height: 350px;
+    width: 500px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+}
+
+.image1 {
+    max-width: 100%;
+    height: auto;
+    margin-left: 5%;
+}
+
+/*-----------TEXT/IMAGE SECTION ABOVE----------*/
+
+.second-wrapper {
+    float: left;
+    line-height: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    height: auto;
+}
+
+/*----------TEXT SECTION ABOVE----------*/
+
+.dropzone {
+    padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 350px;
+    width: 450px;
+    float: right;
+    border: solid 2px black;
+    display: block;
+}
+
+/*----------DROPZONE STYLE ABOVE----------*/
+
+.footer-line {
+    position: relative;
+    width: 100%;
+    border-color: black;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+}
+
+footer {
+    max-width: 100%;
+    height: 150px;
+    background-color: #000000;
+    position: relative;
+    clear: both;
+}
+
+.icons {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin-left: 37%;
+    margin-top: 1%;
+    font-size: 30pt;
+    display: inline-block;
+}
+
+.footer-font {
+    color: white;
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    font-family: Arial;
+    text-align: center;
+    line-height: 30px;
+}
+
+.footer-seperator {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    width: 100%;
+    border-color: white;
+}
+
+.fb {
+    color: white;
+}
+
+.fb:hover {
+    color: #00a087;
+}
+
+.linked {
+    color: white;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.linked:hover {
+    color: #00a087;
+}
+
+.twitter {
+    color: white;
+    margin-right: 7%;
+}
+
+.twitter:hover {
+    color: #00a087;
+}
+
+.insta {
+    color: white;
+}
+
+.insta:hover {
+    color: #00a087;
+}
+
+/*----------FOOTER STYLE ABOVE----------*/
+
+.main-box {
+    position: relative;
+    overflow: hidden;
+    margin-top: 2%;
+}
+
+.text-on-picture {
+    position: absolute;
+    z-index: 1000;
+    font-size: 25px;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+.picture-box {
+    position: relative;
+    box-shadow: 0 4px 2px -2px gray;
+    z-index: 100;
+    overflow: hidden;
+    width: 40%;
+    height: 190px;
+}
+.picture-in-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.text-box {
+    position: relative;
+    width: 39.5%;
+    margin-left: 5px;
+    height: 120px;
+    background-color: #f7f5e6;
+}
+
+.text-in-box {
+    text-decoration: none;
+    font-size: 12pt;
+    font-family: Arial;
+    padding-top: 0.5%;
+    padding-left: 0.2%;
+    text-align: left;
+}
+
+.main-box {
+    animation-delay: 0.5s;
+}
+
+/*----------ABOUT US PAGE STYLE ABOVE----------*/
+
+.top {
+    position: relative;
+    margin-top: 5%;
+}
+
+.bottom {
+    position: relative;
+}
+
+h2 {
+    font-family: Arial;
+}
+
+.address {
+    width: 20%;
+    float: left;
+    line-height: 30px;
+    height: auto;
+    align: top;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
+.google-maps {
+    margin-right: 5%;
+    position: relative;
+    padding-bottom: 35%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 2%;
+}
+ /*-----------CONTACT US STYLE ABOVE----------*/ 
+
+ .main-container {
+    width: 420px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.main-login input {
+    width: 400px;
+    height: 35px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.main-login button {
+    width: 413px;
+    height: 35px;
+    background-color: #00a087;
+    color: #fff;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+}
+
+.main-login button:hover {
+    background-color: #00ccad;
+}
+
+.main-login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.container-login {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.login-line {
+    width: 100%;
+    border-color: black;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+}
+
+/*----------LOGIN PAGE STYLE ABOVE----------*/
+
+.member-table {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cell {  
+    font-size: 16pt;
+    line-height: 50px;
+    list-style: none;
+    padding: 30px;
+    padding-left: 0;
+}
+
+.cell a {
+    text-decoration: none;
+    color: black;
+}
+
+.cell a:hover {
+    color: white;
+}
+
+.logotable {
+    margin: 0 auto;
+	width: 100%;
+    padding-left: 50px;
+}
+.autoResizeImage {
+    max-width: ;
+    height:100%;
+    width: 100%;
+}
+
+.logocell {
+    padding: 10px;
+    padding-left: 50px;
+	width: 100%;
+}
+
+.logos {
+    padding: 10px;
+    padding-left: 50px;
+	width: 100%;
+}
